@@ -5,7 +5,7 @@ Several years ago I received a Davis Vantage Pro 2 weather station as a gift. It
 group could use an on-site weather station to report realtime hyperlocal weather conditions to members. (e.g. "I want to view the comet but there's
 scattered rain. Is it raining at the astronomy site right now?") I decided I could help by donating my weather station. It reports weather, right?
 
-Sort of. The outdoor Davis weather sensors send data wirelessly to the indoor Davis console which displays it. An additional $225(USD) datalogger, which would be plugged into the bottom of toe console, is required to 
+Sort of. The outdoor Davis weather sensors send data wirelessly to the indoor Davis console which displays it. An additional $225(USD) datalogger, which would be plugged into the bottom of the console, is required to 
 export any data from the console for logging or sharing. A $400 USD newer model console could do the task, maybe. Either way, it would cost $4 per
 mobile device per year to access the data through Davis, which would be an unreasonalbe ongoing expense for a non-profit amateur astronomy group. I elected to find a 
 low-cost workaround so that we could access and share the weather data.
