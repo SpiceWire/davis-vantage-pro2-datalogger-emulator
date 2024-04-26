@@ -1,5 +1,5 @@
 # Davis Vantage Pro2 Datalogger Emulator
-Discovering and distributing data from a devilish Davis device.
+How to flash a microcontroller to emulate a datalogger. 
 
 Several years ago I received a Davis Vantage Pro2 weather station as a gift. It sat unused in my basement. I recently found that a local astronomy
 group could use an on-site weather station to report realtime hyperlocal weather conditions to members. (e.g. "I want to view the comet but there's
@@ -14,16 +14,16 @@ low-cost workaround so that we could access and share the weather data.
 I did a quick online search, found the pinouts for the console-datalogger plug, connected a 3.3 volt Serial-to-USB converter to the RX/TX pins 
 on the bottom of the console, and used [PuTTY](https://www.putty.org/) for serial communication.  I referenced the console's [serial protocols](https://cdn.shopify.com/s/files/1/0515/5992/3873/files/VantageSerialProtocolDocs_v261.pdf?v=1614399559) and sent a serial message of "TEST". The console
 replied with "NO".  In this case, "NO" did not mean "Normally Open", "Not On", "Next Operating" or even any oxide of nitrogen. It meant "NO", as in
-"NO means NO."   My console refused to speak with its lawful owner. Grrr.
+"NO means NO."  As in, "NOt mentioned in the documentation."  My console refused to speak with its lawful owner. Grrr. 
 
 ## Access allowed
 A deeper online search lead me realize that Davis had used security measures to prevent users from accessing the data collected by their own equipment. Also,
 community collaboration bypassed these measures. [DeKay](http://madscientistlabs.blogspot.com/2011/01/davis-weatherlink-software-not-required.html) worked
-at length to understand and bypass the security protocols.  [Watson](https://www.wxforum.net/index.php?topic=18110.msg200376#msg200376) provided a table of
+at length to understand the security protocols.  [Watson](https://www.wxforum.net/index.php?topic=18110.msg200376#msg200376) provided a table of
 values that could be flashed to a suitable chip in order to emulate the Davis datalogger.  Others provided printed circuit board plans for download or fabbing.
 
 ## Physical Descriptions:
-The physical port of the console consists of 20 male pins spaced in two rows, 2 mm between each pin. This is a more narrow spacing than most PCB boards (2.54 mm) used in prototyping. Broadly, the Davis console has two separate circuits traveling through the port's pins. As designed, one "authentication" circuit queries a chip with the Davis security code flashed on it. On booting up, this circuit would tell the console "Yes, I'm an official Davis datalogger,"  and the console would use the second circuit for communication with the logger.  
+The physical port of the console consists of 20 male pins spaced in two rows, 2 mm between each pin. This is a more narrow spacing than many PCB boards (2.54 mm) used in prototyping. Broadly, the Davis console has two separate circuits traveling through the port's pins. As designed, one "authentication circuit" queries a chip with the Davis security code flashed on it. On booting up, this circuit would tell the console "Yes, I'm an official Davis datalogger,"  and the console would use the second circuit for communication with the logger.  
 
 ## Parts I ordered and/or tried to use (see Procedures)
 Atmel ATTiny85 SMD chip  
