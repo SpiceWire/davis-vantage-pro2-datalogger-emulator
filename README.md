@@ -1,13 +1,13 @@
-# WeatherHack
-Digging up and distributing data from a devilish Davis device  
+# Davis Vantage Pro2 Datalogger Emulator
+Discovering and distributing data from a devilish Davis device.
 
-Several years ago I received a Davis Vantage Pro 2 weather station as a gift. It sat unused in my basement. I recently found that a local astronomy
+Several years ago I received a Davis Vantage Pro2 weather station as a gift. It sat unused in my basement. I recently found that a local astronomy
 group could use an on-site weather station to report realtime hyperlocal weather conditions to members. (e.g. "I want to view the comet but there's
 scattered rain. Is it raining at the astronomy site right now?") I decided I could help by donating my weather station. It reports weather, right?
 
-Sort of. The outdoor Davis weather sensors send data wirelessly to the indoor Davis console which displays it. An additional $225(USD) datalogger, which would be plugged into the bottom of the console, is required to 
-export any data from the console for logging or sharing. A $400 USD newer model console could do the task, maybe. Either way, it would cost $4 per
-mobile device per year to access the data through Davis, which would be an unreasonalbe ongoing expense for a non-profit amateur astronomy group. I elected to find a 
+Sort of. The outdoor Davis weather sensors send data wirelessly to the indoor Davis console which displays it. An additional $225(USD) [datalogger](https://www.davisinstruments.com/collections/data-collection-1/products/weatherlink-windows-usb), which would be plugged into the bottom of the console, is required to 
+export any data from the console for logging or sharing. A $400 USD newer model console could also do the task, maybe. Either way, it would cost $4-$8 [per
+mobile device per year](https://www.davisinstruments.com/pages/weatherlink-app) to access the data through Davis software, which would be an unreasonalbe ongoing expense for a non-profit amateur astronomy group. I elected to find a 
 low-cost workaround so that we could access and share the weather data.
 
 ## Access denied
@@ -55,5 +55,7 @@ The "COM4" specified my active COM port at the time I flashed the chip. The "t85
 ## Outcome
 The ATTiny85 was flashed successfully and I wrote backend and frontend code to view, store and search weather data.
 
-The astronomy group? A simple weather station does not gather data on cloud cover. They really needed an expensive ceilometer (which measures cloud height) instead.
+The astronomy group? A simple VP2 weather station does not gather data on cloud cover. They really needed an expensive ceilometer (which measures cloud height) instead. So I'm keeping it.
+
+
 
