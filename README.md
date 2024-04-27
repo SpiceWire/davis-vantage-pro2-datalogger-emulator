@@ -52,8 +52,28 @@ I used the davis_random HEX file provided by [night303](https://www.wxforum.net/
 
 The "COM4" specified my active COM port at the time I flashed the chip. The "t85" parameter specified the ATTiny85 chip. I did not use the chip or methods described in the [epic writeup by Torkel](https://meteo.annoyingdesigns.com/DavisSPI.pdf) because I did not own the equipment used. But thank you, Torkel, for your research and contributions.
 
+
+The flashed ATTiny is connected to the Vantage Pro2 as follows:
+
+| VP2 pin | ATTiny85 pin | Function |
+|---|---|---|
+| 1 | 3 | CS |
+| 2 | 7 | SCK |
+| 3 | 5 | PICO |
+| 4 | 6 | POCI |
+| 13 | 8 | VCC |
+| 15 | 4 | GND |
+
+Connections to a 3.3 serial converter are:
+
+| VP2 pin | Serial Converter | 
+|---|---|---|
+| 6 (TX) |  RX |
+| 5 (RX)| | TX |
+| 16 (GND) | GND |
+
 ## Outcome
-The ATTiny85 was flashed successfully and I wrote backend and frontend code to view, store and search weather data.
+The ATTiny85 was flashed successfully, VP2 accessed, and I wrote backend and frontend code to view, store and search weather data.
 
 The astronomy group? A simple VP2 weather station does not gather data on cloud cover. They really needed an expensive ceilometer (which measures cloud height) instead. So I'm keeping it.
 
